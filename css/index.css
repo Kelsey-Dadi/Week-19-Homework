@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  background-color: white;
+  font-family: 'Monaco', monospace;
+}
+
+header {
+  padding: 15px;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  font-size: 20px;
+  height: 50px;
+
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+header ul {
+  color: #900C3F;
+}
+
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.logo{
+    height: 68px;
+    justify-content: flex-start;
+}
+
+.icons {
+    display: none;
+    border-radius: 10px;
+
+}
+
+.searchBar {
+    background-color: #900C3F;
+    color: #F1E1E7;
+    border-radius: 10px;
+    width: 25%;
+    padding: 10px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.infoCard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #F1E1E7;
+  color: #900C3F;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+button {
+  padding: 15px;
+  background-color: #900C3F;
+  color: #F1E1E7;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: 'Monaco', monospace;
+}
+
+.resumeButton {
+  display: flex;
+  justify-content: center;
+}
+
+.projectsButton {
+
+
+}
+
+.allProjectsButton {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.allProjectsButton button {
+    width:100%;
+}
+
+
+.sectionHeader {
+    color: #480620;
+    text-align: center;
+}
+
+/*My Work overall section */
+.myWork {
+
+}
+
+/*overall card section original*/
+.allCardsGrid{
+    margin: 18px;
+    display: grid;
+    column-gap: 18px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "secondhandHounds locationUI FCC";
+}
+
+/*specifics for each cards*/
+#secondhandHounds {
+    grid-area: secondhandHounds;
+}
+
+#locationUI {
+    grid-area: locationUI;
+}
+
+#FCC {
+    grid-area: FCC;
+}
+
+/*apply to all cards*/
+.projectCard {
+    background-color: #F1E1E7;
+    color: #900C3F;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.image{
+    width: 100%;
+}
+
+.projectButton {
+    flex-direction: center;
+}
+
+
+
+footer {
+  background-color: white;
+  padding: 5px;
+  color: #900C3F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+@media only screen and (max-width: 1090px) {
+   .menu{
+        display: none;
+   }
+   .searchBar {
+        display: none;
+   }
+
+
+   .icons {
+    display: flex;
+   }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .allCardsGrid{
+        row-gap: 18px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "secondhandHounds"
+        "locationUI"
+        "FCC";
+   }
+}
