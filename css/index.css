@@ -39,14 +39,6 @@ header li {
 
 }
 
-.searchBar {
-    background-color: #900C3F;
-    color: #F1E1E7;
-    border-radius: 10px;
-    width: 25%;
-    padding: 10px;
-}
-
 .content {
     padding: 16px;
 }
