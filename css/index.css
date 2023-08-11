@@ -4,6 +4,10 @@ body {
   font-family: 'Monaco', monospace;
 }
 
+h3 {
+    font-size: 26px;
+}
+
 header {
   padding: 15px;
   display: flex;
@@ -36,7 +40,6 @@ header li {
 .icons {
     display: none;
     border-radius: 10px;
-
 }
 
 .content {
@@ -133,8 +136,9 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
 
 
 
@@ -144,6 +148,7 @@ button {
 
 .projectButton {
     flex-direction: center;
+    margin: 16px;
 }
 
 
