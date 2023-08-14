@@ -96,22 +96,6 @@ button {
     text-align: center;
 }
 
-/*My Work overall section */
-.myWork {
-
-}
-
-/*overall card section original*/
-.allCardsGrid{
-    margin: 18px;
-    display: grid;
-    column-gap: 18px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "secondhandHounds locationUI FCC";
-}
-
 /*specifics for each cards*/
 #secondhandHounds {
     grid-area: secondhandHounds;
@@ -125,6 +109,8 @@ button {
     grid-area: FCC;
 }
 
+
+
 /*apply to all cards*/
 .projectCard {
     background-color: #F1E1E7;
@@ -134,13 +120,15 @@ button {
     padding: 16px;
     text-align: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
 }
 
 .image{
-    width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+
+    display: block;
    /* style="width:300px;height:300px;"  in case we need from example */
 }
 
@@ -203,13 +191,89 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 }
 
 
-
-
-
 .projectButton {
     flex-direction: center;
     margin: 16px;
 }
+
+.projectText{
+    display: flex;
+    color: #900C3F;
+
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* My Work Section */
+.myWork {
+
+  padding-top: 0;
+
+}
+.workGrid {
+  display: grid;
+  grid-row-gap: 18px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-areas:
+  "SHHImg SHHText"
+  "locImg locText"
+  "FCCImg FCCText"
+  ;
+}
+.workGrid img {
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+}
+.SHHImg {
+  grid-area: SHHImg;
+}
+.locImg {
+  grid-area: locImg;
+}
+.FCCImg {
+  grid-area: FCCImg;
+}
+.SHHImg, .locImg, .FCCImg{
+  padding: 50px;
+  background-color: #F1E1E7;
+
+}
+#SHHText, #locText, #FCCText {
+padding: 50px;
+background-color: #F1E1E7;
+
+    /* can probably do just the left and right
+        border-style: solid;
+        border-radius: 10px;
+
+
+    */
+}
+
+
+
+#SHHText {
+  grid-area: SHHText;
+}
+#locText {
+  grid-area: locText;
+}
+#FCCText {
+  grid-area: FCCText;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -242,13 +306,18 @@ footer li {
 
 
 @media only screen and (max-width: 600px) {
-    .allCardsGrid{
-        row-gap: 18px;
-        grid-template-rows: 1fr 1fr 1fr;
+    .workGrid {
+        background-color: white;
+        display: grid;
+        grid-row-gap: 0px;
+        grid-template-rows: 400px 300px 400px 300px 400px 300px;
         grid-template-columns: 1fr;
         grid-template-areas:
-        "secondhandHounds"
-        "locationUI"
-        "FCC";
+            "SHHImg"
+            "SHHText"
+            "locImg"
+            "locText"
+            "FCCImg"
+            "FCCText";
    }
 }
