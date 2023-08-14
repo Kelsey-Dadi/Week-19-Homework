@@ -174,11 +174,6 @@ footer li {
    .menu{
         display: none;
    }
-   .searchBar {
-        display: none;
-   }
-
-
    .icons {
     display: flex;
    }
