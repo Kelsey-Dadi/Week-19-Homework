@@ -127,8 +127,7 @@ button {
 .image{
   max-width: 350px;
   margin: 0 auto;
-
-    display: block;
+  display: block;
    /* style="width:300px;height:300px;"  in case we need from example */
 }
 
@@ -214,7 +213,11 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 }
 .workGrid {
   display: grid;
-  grid-row-gap: 18px;
+  /*grid-row-gap: 18px;*/
+  justify-content: center;
+  align-content: center;
+
+  gap: 20px 5px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 400px 400px 400px;
   grid-template-areas:
@@ -230,6 +233,7 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 }
 .SHHImg {
   grid-area: SHHImg;
+
 }
 .locImg {
   grid-area: locImg;
@@ -240,24 +244,24 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 .SHHImg, .locImg, .FCCImg{
   padding: 50px;
   background-color: #F1E1E7;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 
 }
 #SHHText, #locText, #FCCText {
-padding: 50px;
-background-color: #F1E1E7;
-
-    /* can probably do just the left and right
-        border-style: solid;
-        border-radius: 10px;
+  padding: 50px;
+  background-color: #F1E1E7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 
 
-    */
 }
 
 
 
 #SHHText {
   grid-area: SHHText;
+
 }
 #locText {
   grid-area: locText;
@@ -265,6 +269,7 @@ background-color: #F1E1E7;
 #FCCText {
   grid-area: FCCText;
 }
+
 
 
 
@@ -294,23 +299,32 @@ footer li {
   padding: 0px 7px;
 }
 
-@media only screen and (max-width: 1090px) {
-   .menu{
-        display: none;
+@media only screen and (min-width: 1440px) {
+    .workGrid {
+
+    display: grid;
+    /*grid-row-gap: 18px;*/
+
+    gap: 20px 5px;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:
+    "SHHImg SHHText"
+    "locImg locText"
+    "FCCImg FCCText"
    }
-   .icons {
-    display: flex;
-   }
+
 }
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .workGrid {
         background-color: white;
         display: grid;
-        grid-row-gap: 0px;
-        grid-template-rows: 400px 300px 400px 300px 400px 300px;
+/*margin around grid */
+        gap: 0px;
+        grid-template-rows: 350px 300px 350px 300px 350px 300px;
         grid-template-columns: 1fr;
         grid-template-areas:
             "SHHImg"
@@ -319,5 +333,14 @@ footer li {
             "locText"
             "FCCImg"
             "FCCText";
+   }
+}
+
+@media only screen and (max-width: 1090px) {
+   .menu{
+        display: none;
+   }
+   .icons {
+    display: flex;
    }
 }
