@@ -11,19 +11,20 @@
       <img class="logo" src="images/Logo Light.png">
       <div class="menu">
       <ul>
-        <li>Work</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Resume</li>
-        <li>Linked-In</li>
+        <li class="tab workTab">Work</li>
+        <li class="tab aboutTab">About</li>
+        <li class="tab contactTab">Contact</li>
+        <li class="tab resumeTab">Resume</li>
+        <li class="tab linkedTab">Linked-In</li>
       </ul>
       </div>
       <img class="icons" src="images/ham.png">
     </header>
 
+    <a href="#info">Jump to skills</a>
 
 
-    <section class="content">
+    <section class="content" id="info">
       <div class="infoCard">
         <p>
           Hello, I am <u>Kelsey Dadi</u>!
@@ -43,8 +44,8 @@
 
       </section>
 
-    <section class="content">
-      <h1 class="sectionHeader">My UX Skills</h1>
+    <section class="content" >
+      <h1 class="sectionHeader" id="skills">My UX Skills</h1>
       <div class="infoCard">
         <p>
           <u>Research</u>: A/B Testing, Affinity Diagraming, Card Sorting, Persona Creation, User Interviews/Research, Usability Testing
@@ -60,7 +61,7 @@
 
 
 
-    <section class="myWork">
+    <section class="myWork" id="work">
       <h1 class="sectionHeader">My Work</h1>
       <div class="workGrid">
         <div class="SHHImg">
@@ -126,6 +127,13 @@
       </div>
     </section>
 
+    <div class="allProjectsButton">
+      <button>View All Projects</button>
+    </div>
+
+
+
+
 
 
     <footer>
@@ -137,6 +145,8 @@
         <li>Linked-In</li>
       </ul>
     </footer>
-    <script src="js/index.js"></script>
+
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
 </html>

@@ -273,10 +273,33 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 
 
 
+/*nav bar animations */
+.active {
+  text-decoration: underline;
+}
 
 
+.tab {
+  cursor: pointer;
+}
 
+. workTab {
 
+}
+
+.aboutTab{
+}
+
+.contactTab{
+
+}
+
+.resumeTab{
+}
+
+.linkedTab {
+
+}
 
 
 
@@ -300,6 +323,9 @@ footer li {
   padding: 0px 7px;
 }
 
+
+
+/* Media Queries */
 @media only screen and (min-width: 1440px) {
     .workGrid {
 
