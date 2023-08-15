@@ -27,6 +27,10 @@ header ul {
   color: #900C3F;
 }
 
+a {
+    color: #900C3F;
+}
+
 header li {
   display: inline-block;
   padding: 0px 5px;
@@ -83,6 +87,8 @@ button {
     display: flex;
     justify-content: center;
     padding: 15px;
+    max-width: 1200px;
+      margin: 0 auto;
 }
 
 
@@ -352,14 +358,15 @@ footer li {
    .icons {
     display: flex;
    }
+
+   /* add logic for the drop down menu toggle*/
 }
 
 @media only screen and (max-width: 900px) {
     .workGrid {
         background-color: white;
         display: grid;
-/*margin around grid */
-margin: 16px;
+        margin: 16px;
         gap: 0px;
         grid-template-rows: 400px 300px 400px 300px 400px 350px;
         grid-template-columns: 1fr;
@@ -381,10 +388,10 @@ margin: 16px;
    .SHHImg, .locImg, .FCCImg{
      padding: 50px;
      background-color: #F1E1E7;
-       border-top-left-radius: 10px;
-       border-top-right-radius: 10px;
-       border-bottom-left-radius: 0px;
-       border-bottom-right-radius: 0px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-left-radius: 0px;
+     border-bottom-right-radius: 0px;
 
    }
    #SHHText, #locText, #FCCText {
@@ -397,6 +404,9 @@ margin: 16px;
 
    }
 
+   .allProjectsButton {
+        margin: 16px;
+   }
 
 }
 
