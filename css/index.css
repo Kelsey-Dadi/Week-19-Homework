@@ -207,8 +207,10 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 
 /* My Work Section */
 .myWork {
-
   padding-top: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
 
 }
 .workGrid {
@@ -216,7 +218,6 @@ of the box on hover (remove perspective if you don't want the 3D effect */
   /*grid-row-gap: 18px;*/
   justify-content: center;
   align-content: center;
-
   gap: 20px 5px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 400px 400px 400px;
@@ -303,10 +304,12 @@ footer li {
     .workGrid {
 
     display: grid;
-    /*grid-row-gap: 18px;*/
 
-    gap: 20px 5px;
-    grid-template-columns: 40% 40%;
+    /*grid-row-gap: 18px;*/
+    max-width: 1200px;
+
+
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 400px 400px;
     grid-template-areas:
     "SHHImg SHHText"
@@ -314,26 +317,6 @@ footer li {
     "FCCImg FCCText"
    }
 
-}
-
-
-
-@media only screen and (max-width: 900px) {
-    .workGrid {
-        background-color: white;
-        display: grid;
-/*margin around grid */
-        gap: 0px;
-        grid-template-rows: 350px 300px 350px 300px 350px 300px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "SHHImg"
-            "SHHText"
-            "locImg"
-            "locText"
-            "FCCImg"
-            "FCCText";
-   }
 }
 
 @media only screen and (max-width: 1090px) {
@@ -344,3 +327,50 @@ footer li {
     display: flex;
    }
 }
+
+@media only screen and (max-width: 900px) {
+    .workGrid {
+        background-color: white;
+        display: grid;
+/*margin around grid */
+margin: 16px;
+        gap: 0px;
+        grid-template-rows: 400px 300px 400px 300px 400px 350px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "SHHImg"
+            "SHHText"
+            "locImg"
+            "locText"
+            "FCCImg"
+            "FCCText";
+   }
+
+    .workGrid img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+   .SHHImg, .locImg, .FCCImg{
+     padding: 50px;
+     background-color: #F1E1E7;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+       border-bottom-left-radius: 0px;
+       border-bottom-right-radius: 0px;
+
+   }
+   #SHHText, #locText, #FCCText {
+     padding: 50px;
+     background-color: #F1E1E7;
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+
+   }
+
+
+}
+
