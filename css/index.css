@@ -301,6 +301,7 @@ of the box on hover (remove perspective if you don't want the 3D effect */
   background-color: #F1E1E7;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin-bottom: 16px;
 
 
 }
