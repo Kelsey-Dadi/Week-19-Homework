@@ -23,12 +23,12 @@ header {
   width: 50%;
 }
 
-header ul {
+ul {
   color: #900C3F;
 }
 
 a {
-    color: #900C3F;
+   color: #900C3F;
 }
 
 header li {
@@ -44,10 +44,51 @@ header li {
 .icons {
     display: none;
     border-radius: 10px;
+    position:absolute;
+    right:16px;
+    top:16px;
 }
+
+#dropDown {
+  display: none;
+  width: 100%;
+  font-size: 20px;
+}
+
+#dropDown ul {
+  width: 100%;
+  margin:0;
+  padding: 0;
+  list-style-type:none;
+  position: absolute;
+  z-index: 9;
+  background-color: #FFFFFF;
+  font-size: 20px;
+}
+
+#dropDown li {
+  margin:0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#dropDown a {
+   color: #900C3F;
+   text-decoration: none;
+}
+
+#toggle {
+  cursor: pointer;
+}
+
+
+
 
 .content {
     padding: 16px;
+    position: relative;
 }
 
 .infoCard {
@@ -284,6 +325,13 @@ of the box on hover (remove perspective if you don't want the 3D effect */
   text-decoration: underline;
 }
 
+.activeDropDown {
+    display: block;
+}
+
+.disabledDropDown {
+    display: none;
+}
 
 .tab {
   cursor: pointer;
@@ -334,19 +382,18 @@ footer li {
 /* Media Queries */
 @media only screen and (min-width: 1440px) {
     .workGrid {
-
     display: grid;
-
     /*grid-row-gap: 18px;*/
     max-width: 1200px;
-
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 400px 400px;
     grid-template-areas:
     "SHHImg SHHText"
     "locImg locText"
     "FCCImg FCCText"
+   }
+   #dropDown {
+     display: none;
    }
 
 }
@@ -355,11 +402,20 @@ footer li {
    .menu{
         display: none;
    }
+
    .icons {
-    display: flex;
+        display: flex;
    }
 
+    header {
+
+    }
+
    /* add logic for the drop down menu toggle*/
+    #dropDown {
+    display: flex;
+
+    }
 }
 
 @media only screen and (max-width: 900px) {

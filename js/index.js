@@ -44,5 +44,10 @@ $('.tab').hover( function(){
 });
 
 
-/* Get clicks going to sections, maybe add click and anchor, might have to change list to anchor */
+$("#toggle").on("click", function(){
+  $("#dropDown").slideToggle();
+});
 
+function hideDropDown(){
+  $("#dropDown").hide();
+}
