@@ -129,7 +129,7 @@ button {
     justify-content: center;
     padding: 15px;
     max-width: 1200px;
-      margin: 0 auto;
+    margin: 0 auto;
 }
 
 
@@ -265,7 +265,7 @@ of the box on hover (remove perspective if you don't want the 3D effect */
   /*grid-row-gap: 18px;*/
   justify-content: center;
   align-content: center;
-  gap: 20px 5px;
+  gap: 20px 0px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 400px 400px 400px;
   grid-template-areas:
@@ -292,8 +292,8 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 .SHHImg, .locImg, .FCCImg{
   padding: 50px;
   background-color: #F1E1E7;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
 }
 #SHHText, #locText, #FCCText {
@@ -301,8 +301,6 @@ of the box on hover (remove perspective if you don't want the 3D effect */
   background-color: #F1E1E7;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-bottom: 16px;
-
 
 }
 
@@ -393,9 +391,7 @@ footer li {
     "locImg locText"
     "FCCImg FCCText"
    }
-   #dropDown {
-     display: none;
-   }
+
 
 }
 
@@ -407,16 +403,6 @@ footer li {
    .icons {
         display: flex;
    }
-
-    header {
-
-    }
-
-   /* add logic for the drop down menu toggle*/
-    #dropDown {
-    display: flex;
-
-    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -425,7 +411,7 @@ footer li {
         display: grid;
         margin: 16px;
         gap: 0px;
-        grid-template-rows: 400px 300px 400px 300px 400px 350px;
+        grid-template-rows: 400px 320px 400px 290px 400px 360px;
         grid-template-columns: 1fr;
         grid-template-areas:
             "SHHImg"
@@ -458,6 +444,7 @@ footer li {
      border-top-right-radius: 0px;
      border-bottom-left-radius: 10px;
      border-bottom-right-radius: 10px;
+     margin-bottom: 16px;
 
    }
 
