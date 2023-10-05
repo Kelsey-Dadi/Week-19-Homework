@@ -270,7 +270,7 @@ of the box on hover (remove perspective if you don't want the 3D effect */
   grid-template-rows: 400px 400px 400px;
   grid-template-areas:
   "SHHImg SHHText"
-  "locImg locText"
+  "locText locImg"
   "FCCImg FCCText"
   ;
 }
@@ -289,17 +289,19 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 .FCCImg {
   grid-area: FCCImg;
 }
-.SHHImg, .locImg, .FCCImg{
+.SHHImg,  .FCCImg, #locText{
   padding: 50px;
   background-color: #F1E1E7;
+
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
 
-#SHHText, #locText, #FCCText {
+#SHHText, .locImg, #FCCText {
   padding: 50px;
   background-color: #F1E1E7;
+
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 
@@ -387,7 +389,7 @@ footer li {
     grid-template-rows: 400px 400px 400px;
     grid-template-areas:
     "SHHImg SHHText"
-    "locImg locText"
+    "locText locImg"
     "FCCImg FCCText"
    }
 
